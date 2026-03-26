@@ -3,6 +3,7 @@ require("dotenv").config();
 
 const { MONGODB_URL } = process.env;
 
+// Establishes a connection to the MongoDB database using Mongoose.
 exports.connect = () => {
 	mongoose
 		.connect(MONGODB_URL, {
